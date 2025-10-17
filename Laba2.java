@@ -1,19 +1,21 @@
-public class Laba2 {
+public class Laba2 
+{
 
     public static void main(String[] args) 
     {
         int levels = 6; // кількість рівнів ялинки                              !!!!!!!
-        Tree(levels);
-
-        System.out.println();
-
         int rows = 3;
         int cols = 4;
-        Array(rows, cols);
+        
+        Laba2 laboratorna = new Laba2();
+
+        laboratorna.Tree(levels);
+        System.out.println();
+        laboratorna.Array(rows, cols);
     }
 
     //ялинка
-    public static void Tree(int levels) 
+    public void Tree(int levels) 
     {
         for (int i = 1; i <= levels; i++) 
         {
@@ -30,7 +32,7 @@ public class Laba2 {
     }
 
     //масив
-    public static void Array(int rows, int cols) 
+    public void Array(int rows, int cols) 
     {
         int[][] array = new int[rows][cols];
         int value = 1;
